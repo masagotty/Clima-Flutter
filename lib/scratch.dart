@@ -4,7 +4,7 @@ void main() {
   performTasks();
 }
 
-void performTasks() async {
+Future<void> performTasks() async {
   task1();
   String task2Result = await task2();
   task3(task2Result);
